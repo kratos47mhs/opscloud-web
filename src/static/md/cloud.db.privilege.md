@@ -1,4 +1,4 @@
-##### 权限说明
+##### Permission description
 
 <table style="font-size:3px">
 	<tr>

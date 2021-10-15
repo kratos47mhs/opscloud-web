@@ -1,9 +1,9 @@
-##### 脚本参数支持
+##### Script parameter support
 
 ```
 #!/bin/bash
-# 输出第一个参数
+# Output the first parameter
 echo $1
-# 输出第二个参数
+# Output the second parameter
 echo $2
 ```

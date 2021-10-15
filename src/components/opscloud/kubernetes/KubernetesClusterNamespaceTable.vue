@@ -13,7 +13,7 @@
       <el-input v-model="queryParam.queryName" placeholder="输入关键字模糊查询"
                 class="input"/>
       <el-button @click="fetchData" style="margin-left: 5px">查询</el-button>
-      <el-button @click="handlerAdd" style="margin-left: 5px">新建</el-button>
+      <el-button @click="handlerAdd" style="margin-left: 5px">New</el-button>
     </el-row>
     <el-table :data="tableData" style="width: 100%" v-loading="loading">
       <el-table-column prop="cluster" label="集群">

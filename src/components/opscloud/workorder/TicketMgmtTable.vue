@@ -138,32 +138,32 @@ export default {
       },
       ticketPhaseOptions: [{
         value: 'CREATED_TICKET',
-        label: '新建'
+        label: 'New'
       }, {
         value: 'APPLIED_TICKET',
-        label: '提交申请'
+        label: 'Submit Application'
       }, {
         value: 'ORG_APPROVAL',
-        label: '上级审批'
+        label: 'Superior Approval'
       }, {
         value: 'USERGROUP_APPROVAL',
-        label: '用户组审批'
+        label: 'User group approval'
       }, {
         value: 'CONFIGURATION',
-        label: '运维配置阶段'
+        label: 'Operation and maintenance configuration stage'
       }, {
         value: 'FINALIZED',
-        label: '结束'
+        label: 'Finalized'
       }],
       ticketStatusOptions: [{
         value: 0,
         label: '正常'
       }, {
         value: 1,
-        label: '结束（成功）'
+        label: 'Finalized（成功）'
       }, {
         value: 2,
-        label: '结束（失败）'
+        label: 'Finalized（失败）'
       }]
     }
   },

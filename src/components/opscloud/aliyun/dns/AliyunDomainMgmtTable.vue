@@ -54,7 +54,7 @@
       <el-table-column fixed="right" label="操作" width="100">
         <template slot-scope="scope">
           <el-button :type="scope.row.isActive === 0 ? 'success' : 'info'" plain size="mini"
-                     @click="setItemActive(scope.row)">{{ scope.row.isActive === 0 ? '有效' : '无效' }}
+                     @click="setItemActive(scope.row)">{{ scope.row.isActive === 0 ? 'Valid' : 'Invalid' }}
           </el-button>
         </template>
       </el-table-column>
@@ -89,10 +89,10 @@ export default {
       },
       activeOptions: [{
         value: 0,
-        label: '无效'
+        label: 'Invalid'
       }, {
         value: 1,
-        label: '有效'
+        label: 'Valid'
       }],
       syncLoading: false
     }
@@ -143,7 +143,7 @@ export default {
       return registrantType === '1' ? '个人' : '企业'
     },
     activeFilters (isActive) {
-      return isActive === 0 ? '无效' : '有效'
+      return isActive === 0 ? 'Invalid' : 'Valid'
     }
   },
   methods: {

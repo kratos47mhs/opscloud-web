@@ -79,7 +79,7 @@
                     </el-tag>
                   </template>
                 </el-table-column>
-                <el-table-column prop="isActive" label="有效">
+                <el-table-column prop="isActive" label="Valid">
                   <template slot-scope="scope">
                     <el-tag class="filters" :type="scope.row.isActive | getActiveType" size="small ">
                       {{scope.row.isActive | getActiveText}}
@@ -133,10 +133,10 @@
     label: '全部'
   }, {
     value: 1,
-    label: '有效'
+    label: 'Valid'
   }, {
     value: 0,
-    label: '无效'
+    label: 'Invalid'
   }]
 
   export default {

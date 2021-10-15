@@ -12,7 +12,7 @@
                   </el-button>
                   <el-button type="primary" plain size="mini" @click="createTicket(scope.row)"
                              v-if="scope.row.workorderStatus === 0"
-                             :loading="ticketCreateing">新建
+                             :loading="ticketCreateing">New
                   </el-button>
                   <el-button type="warning" plain size="mini" v-if="scope.row.workorderStatus === 1"
                              :loading="ticketCreateing">开发

@@ -21,7 +21,7 @@ const frameIn = [
         },
         component: _import('system/index')
       },
-      // 系统 前端日志
+      // System 前端日志
       {
         path: 'log',
         name: 'log',

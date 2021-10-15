@@ -61,7 +61,7 @@
             <el-table-column fixed="right" label="操作" v-if="false" width="200">
               <template slot-scope="scope">
                 <el-button :type="scope.row.isActive === 0 ? 'success' : 'info'" plain size="mini"
-                           @click="setItemActive(scope.row)">{{scope.row.isActive === 0 ? '有效' : '无效'}}
+                           @click="setItemActive(scope.row)">{{scope.row.isActive === 0 ? 'Valid' : 'Invalid'}}
                 </el-button>
                 <el-button type="primary" plain size="mini" @click="addItem(scope.row)"
                            v-show="scope.row.serverStatus == 0">

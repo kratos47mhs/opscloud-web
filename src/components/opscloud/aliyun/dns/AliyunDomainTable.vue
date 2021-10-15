@@ -138,7 +138,7 @@ export default {
       return registrantType === '1' ? '个人' : '企业'
     },
     activeFilters (active) {
-      return active === '0' ? '无效' : '有效'
+      return active === '0' ? 'Invalid' : 'Valid'
     }
   },
   methods: {

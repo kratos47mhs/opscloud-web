@@ -40,7 +40,7 @@
       <el-table-column prop="policyType" label="类型" width="80">
         <template slot-scope="scope">
           <el-tag class="filters" :type="scope.row.policyType === 'System' ? 'danger':'primary'" size="small">
-            {{scope.row.policyType === 'System' ? '系统':'自定义'}}
+            {{scope.row.policyType === 'System' ? 'System':'自定义'}}
           </el-tag>
         </template>
       </el-table-column>

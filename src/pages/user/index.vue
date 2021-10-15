@@ -10,7 +10,7 @@
                     style="display: inline-block; max-width:200px;margin-left: 10px"/>
           <el-button @click="fetchData" size="mini" style="margin-left: 5px">查询</el-button>
           <el-button @click="syncLdapUser" size="mini" style="margin-left: 5px">同步</el-button>
-          <el-button @click="addItem" size="mini" style="margin-left: 5px">新建</el-button>
+          <el-button @click="addItem" size="mini" style="margin-left: 5px">New</el-button>
           <el-popconfirm title="确定吊销所有用户的令牌吗？" @onConfirm="cleanToken()">
             <el-button slot="reference" size="mini" style="margin-left: 5px">吊销令牌
             </el-button>

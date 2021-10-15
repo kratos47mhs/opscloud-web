@@ -7,10 +7,10 @@
       <el-table-column prop="name" label="实例名称"></el-table-column>
       <el-table-column prop="hostname" label="主机名"></el-table-column>
       <el-table-column prop="hostIp" label="注册ip"></el-table-column>
-      <el-table-column prop="isActive" label="有效">
+      <el-table-column prop="isActive" label="Valid">
         <template slot-scope="props">
           <el-tag disable-transitions :type="props.row.isActive ? 'success' : 'info'">
-            {{props.row.isActive ? '有效':'无效'}}
+            {{props.row.isActive ? 'Valid':'Invalid'}}
           </el-tag>
         </template>
       </el-table-column>
@@ -18,7 +18,7 @@
       <el-table-column fixed="right" label="操作" width="380">
         <template slot-scope="scope">
           <el-button :type="scope.row.isActive ?  'info': 'success'" plain size="mini"
-                     @click="handlerRowSetActive(scope.row)">{{scope.row.isActive ? '无效':'有效'}}</el-button>
+                     @click="handlerRowSetActive(scope.row)">{{scope.row.isActive ? 'Invalid':'Valid'}}</el-button>
           <el-button type="danger" plain size="mini" @click="handlerRowDel(scope.row)">删除</el-button>
         </template>
       </el-table-column>

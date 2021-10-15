@@ -12,7 +12,7 @@
       <el-button @click="fetchData" style="margin-left: 5px">查询</el-button>
     </el-row>
     <el-table :data="tableData" style="width: 100%">
-      <el-table-column prop="user" label="用户">
+      <el-table-column prop="user" label="User">
         <template slot-scope="props">
           <span v-if="props.row.user !== null && props.row.user.displayName !== null">{{ props.row.user.displayName }}</span>
         </template>

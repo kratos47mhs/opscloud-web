@@ -164,7 +164,7 @@
                        :key="item.value" :label="item.label" :value="item.value"></el-option>
           </el-select>
           <el-checkbox style="margin-left: 30px" v-model="createInstanceData.charge.autoRenew"
-                       v-show="createInstanceData.charge.chargeType">自动续费
+                       v-show="createInstanceData.charge.chargeType">Auto Renewal
           </el-checkbox>
         </el-form-item>
       </el-form>

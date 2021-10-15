@@ -178,7 +178,7 @@ export default {
         return '停用'
       }
       if (alarmStatus === 1) {
-        return '启用'
+        return 'Enable'
       }
       if (alarmStatus === -1) {
         return '异常'

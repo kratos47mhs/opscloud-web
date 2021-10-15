@@ -63,7 +63,7 @@
                 <div style="margin: 15px 0;"></div>
                 <el-card class="box-card" shadow="never">
                   <div slot="header" class="clearfix">
-                    <span>管理员</span>
+                    <span>Administrator</span>
                   </div>
                   <!--用户搜索-->
                   <div style="margin-bottom: 5px">
@@ -138,7 +138,7 @@
             <!--会话table-->
             <el-row style="margin-bottom: 5px">
               <el-table :data="terminalSessionTableData" style="width: 100%" v-loading="terminalSessionLoading">
-                <el-table-column prop="user" label="用户"></el-table-column>
+                <el-table-column prop="user" label="User"></el-table-column>
                 <el-table-column prop="remoteAddr" label="用户ip"></el-table-column>
                 <el-table-column prop="asset" label="资产"></el-table-column>
                 <el-table-column prop="protocol" label="协议"></el-table-column>

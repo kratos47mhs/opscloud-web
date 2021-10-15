@@ -2,7 +2,7 @@
   <div>
     <el-row :gutter="24" style="margin-bottom: 5px; margin-left: 0px">
       <el-input v-model="queryParam.queryName" placeholder="关键字查询" style="display: inline-block; max-width:200px"/>
-      <el-select v-model="queryParam.isActive" clearable placeholder="有效" style="margin-left: 5px">
+      <el-select v-model="queryParam.isActive" clearable placeholder="Valid" style="margin-left: 5px">
         <el-option
           v-for="item in activeOptions"
           :key="item.value"
@@ -50,7 +50,7 @@
           <el-tree :data="scope.row.vswitchData"></el-tree>
         </template>
       </el-table-column>
-      <el-table-column prop="isActive" label="有效">
+      <el-table-column prop="isActive" label="Valid">
         <template slot-scope="scope">
           <el-tag class="filters" :type="scope.row.isActive | getActiveType" size="small">
             {{scope.row.isActive | getActiveText}}
@@ -60,7 +60,7 @@
       <el-table-column label="操作" width="280">
         <template slot-scope="scope">
           <el-button :type="scope.row.isActive === 0 ? 'success' : 'info'" plain size="mini"
-                     @click="setItemActive(scope.row)">{{scope.row.isActive === 0 ? '有效' : '无效'}}
+                     @click="setItemActive(scope.row)">{{scope.row.isActive === 0 ? 'Valid' : 'Invalid'}}
           </el-button>
           <el-button type="primary" plain size="mini" @click="editItem(scope.row)">编辑</el-button>
           <el-button type="danger" plain size="mini" @click="delItem(scope.row)">删除</el-button>
@@ -96,10 +96,10 @@
     label: '全部'
   }, {
     value: 0,
-    label: '无效'
+    label: 'Invalid'
   }, {
     value: 1,
-    label: '有效'
+    label: 'Valid'
   }]
 
   export default {

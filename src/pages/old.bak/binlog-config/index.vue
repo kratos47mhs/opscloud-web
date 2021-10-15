@@ -231,7 +231,7 @@
                     },
                     custom: [
                         {
-                            text: '启用/停用',
+                            text: 'Enable/停用',
                             type: 'warning',
                             size: 'small',
                             fixed: 'left',

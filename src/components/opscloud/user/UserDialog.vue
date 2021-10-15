@@ -8,7 +8,7 @@
                      @click="handlerCheck(user.username)" :disabled="nameChecked"></el-button>
         </el-input>
       </el-form-item>
-      <el-form-item label="密码">
+      <el-form-item label="Password">
         <el-input v-model="password" clearable placeholder="请输入内容">
           <el-button slot="append" icon="el-icon-key" @click="getUserRandomPassword"></el-button>
         </el-input>

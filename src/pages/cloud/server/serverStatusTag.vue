@@ -38,7 +38,7 @@
             text () {
               switch (this.value) {
                 case 0:
-                  return '新建'
+                  return 'New'
                 case 1:
                   return '已录入'
                 case 2:
@@ -46,7 +46,7 @@
                 case 3:
                   return '删除'
                 default:
-                  return '未定义'
+                  return 'Undefined'
               }
             }
         }

@@ -3,7 +3,7 @@ import UaParser from 'ua-parser-js'
 export default {
   namespaced: true,
   state: {
-    // 用户 UA
+    // User UA
     data: {}
   },
   mutations: {

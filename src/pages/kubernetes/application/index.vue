@@ -46,7 +46,7 @@
         </el-table-column>
         <el-table-column fixed="right" label="操作" width="280">
           <template slot-scope="scope">
-            <el-button type="primary" plain size="mini" @click="handlerRowInstanceAdd(scope.row)">新建</el-button>
+            <el-button type="primary" plain size="mini" @click="handlerRowInstanceAdd(scope.row)">New</el-button>
             <el-button type="primary" plain size="mini" @click="handlerRowEdit(scope.row)">编辑</el-button>
             <el-button type="danger" plain size="mini" @click="handlerRowDel(scope.row)">删除</el-button>
           </template>

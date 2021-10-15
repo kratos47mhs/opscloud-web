@@ -20,7 +20,7 @@ export function getCloudDBTypeTagText (value) {
     case 3:
       return 'AWS-DRS-Mysql'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
@@ -40,12 +40,12 @@ export function getRAMUserType (value) {
 export function getRAMUserTypeText (value) {
   switch (value) {
     case 0:
-      return '默认'
+      return 'Default'
     case 1:
-      return '用户'
+      return 'User'
     case 2:
-      return '系统'
+      return 'System'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }

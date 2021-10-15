@@ -2,7 +2,7 @@
   <el-dialog :title="formStatus.title"
              :visible.sync="formStatus.visible">
     <el-form :model="formData">
-      <el-form-item label="用户" :label-width="formStatus.labelWidth">
+      <el-form-item label="User" :label-width="formStatus.labelWidth">
         <el-select v-model="formData.username" filterable clearable
                    remote reserve-keyword placeholder="输入关键词搜索用户" :remote-method="getUser" :loading="loading">
           <el-option

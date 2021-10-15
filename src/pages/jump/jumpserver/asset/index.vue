@@ -41,10 +41,10 @@
                 <el-table-column prop="publicIp" label="公网ip"></el-table-column>
                 <el-table-column prop="ip" label="私网ip"></el-table-column>
 
-                <el-table-column prop="isActive" label="有效">
+                <el-table-column prop="isActive" label="Valid">
                   <template slot-scope="scope">
-                    <el-tag :type="scope.row.isActive ? 'success' : 'info'" size="small">{{scope.row.isActive ? '有效':
-                      '无效'}}
+                    <el-tag :type="scope.row.isActive ? 'success' : 'info'" size="small">{{scope.row.isActive ? 'Valid':
+                      'Invalid'}}
                     </el-tag>
                   </template>
                 </el-table-column>
@@ -89,10 +89,10 @@
   const activeOptions = [
     {
       value: 1,
-      label: '有效'
+      label: 'Valid'
     }, {
       value: 0,
-      label: '无效'
+      label: 'Invalid'
     }]
 
   export default {

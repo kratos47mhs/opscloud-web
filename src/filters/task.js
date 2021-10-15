@@ -7,6 +7,6 @@ export function getServerTaskText (value) {
     case 2:
       return 'Playbook'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
