@@ -127,7 +127,7 @@
         <language>
             <code>zh-CHS</code>
             <source_id></source_id>
-            <source_file>src/locales/zh-chs.json</source_file>
+            <source_file>src/locales/fa-IR.json</source_file>
         </language>
         <language>
             <code>zh-CHT</code>
@@ -143,7 +143,7 @@
             <file>src/locales/ja.json</file>
         </translation_file>
         <translation_file>
-            <file>src/locales/zh-chs.json</file>
+            <file>src/locales/fa-IR.json</file>
         </translation_file>
         <translation_file>
             <file>src/locales/zh-cht.json</file>

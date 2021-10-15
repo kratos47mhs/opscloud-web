@@ -2,7 +2,7 @@
   <d2-container>
     <template>
       <div>
-        <h1>服务器组类型</h1>
+        <h1>Server group type</h1>
       </div>
       <div style="margin-bottom: 5px">
         <el-row :gutter="24" style="margin-bottom: 5px">

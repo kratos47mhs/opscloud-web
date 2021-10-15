@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import D2Icon from '@/components/d2-icon/index.vue'
 
 describe('d2-icon', () => {
-  // 存在且是Vue组件实例
+  // Exists and is a Vue component instance
   it('is a vue instance', () => {
     const wrapper = mount(D2Icon)
 
@@ -10,7 +10,7 @@ describe('d2-icon', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-  // 包含特定类名
+  // Include specific class name
   it('contains specific classnames', () => {
     const wrapper = mount(D2Icon)
 

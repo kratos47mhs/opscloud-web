@@ -50,7 +50,7 @@ export default {
         legend: {
           orient: 'vertical',
           left: 10,
-          data: ['桌面维护', '资产管理', '网络管理', '用户管理', '邮箱管理', 'IT知识库', '监控管理', '行为管理']
+          data: ['桌面维护', '资产管理', '网络管理', 'User Management', '邮箱管理', 'IT知识库', '监控管理', '行为管理']
         },
         series: [
           {

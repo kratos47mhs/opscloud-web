@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import D2ContainerCard from '@/components/d2-container/components/d2-container-card.vue'
 
 describe('d2-container-card', () => {
-  // 存在且是Vue组件实例
+  // Exists and is a Vue component instance
   it('is a vue instance', () => {
     const wrapper = mount(D2ContainerCard)
 
@@ -10,7 +10,7 @@ describe('d2-container-card', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-  // 包含特定类名
+  // Include specific class name
   it('contains specific classnames', () => {
     const wrapper = mount(D2ContainerCard, {
       slots: {
@@ -38,7 +38,7 @@ describe('d2-container-card', () => {
     expect(wrapper.props().scrollDelay).toEqual(30)
   })
 
-  // 渲染slot
+  // Rendering slot
   it('has one or more slots', () => {
     const wrapper = mount(D2ContainerCard, {
       slots: {

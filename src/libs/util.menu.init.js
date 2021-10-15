@@ -15,7 +15,7 @@ menu.init = function () {
     })
       .then(async res => {
         // console.log(res.menu)
-        // 此处使用扩展运算符 把服务端动态菜单和本地菜单合并
+        // Here use the expansion operator to merge the server dynamic menu with the local menu
         let allMenu = [...menuAside, ...res.body]
         store.commit('d2admin/menu/asideSet', allMenu)
       })

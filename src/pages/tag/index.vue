@@ -2,7 +2,7 @@
   <d2-container>
     <template>
       <div>
-        <h1>标签配置</h1>
+        <h1>Tag configuration</h1>
       </div>
       <el-row :gutter="24" style="margin-bottom: 5px">
         <el-input v-model.trim="queryParam.tagKey" placeholder="标签key" class="input-bar"/>

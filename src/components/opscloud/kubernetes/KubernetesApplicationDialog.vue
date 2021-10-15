@@ -6,7 +6,7 @@
         <el-input v-model.trim="kubernetesApplication.name" placeholder="请输入内容"
                   :disabled="!formStatus.operationType"></el-input>
       </el-form-item>
-      <el-form-item label="服务器组" :label-width="labelWidth" :required="true">
+      <el-form-item label="Server group" :label-width="labelWidth" :required="true">
         <el-select v-model="kubernetesApplication.serverGroupId" filterable clearable
                    remote reserve-keyword placeholder="输入关键词搜组类型" :remote-method="getServerGroup">
           <el-option

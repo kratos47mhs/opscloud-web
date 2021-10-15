@@ -42,7 +42,7 @@ vars:
   key2: value2
 ```
 
-###### tags example(标签配置，可选择执行)
+###### tags example(Tag configuration，可选择执行)
 ```yaml
 tasks:
   - name: 任务1

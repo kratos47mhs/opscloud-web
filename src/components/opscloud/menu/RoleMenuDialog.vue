@@ -19,7 +19,7 @@
     <div slot="footer" class="dialog-footer">
       <el-button @click="formStatus.visible = false">取消</el-button>
       <el-button type="primary" @click="saveRoleMenu">确定</el-button>
-      <el-button type="primary" @click="getMenuTemp">预览</el-button>
+      <el-button type="primary" @click="getMenuTemp">Preview</el-button>
     </div>
   </el-dialog>
 </template>

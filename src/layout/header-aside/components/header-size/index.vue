@@ -18,10 +18,10 @@ export default {
   data () {
     return {
       options: [
-        { label: '默认', value: 'default' },
-        { label: '中', value: 'medium' },
-        { label: '小', value: 'small' },
-        { label: '最小', value: 'mini' }
+        { label: 'Default', value: 'default' },
+        { label: 'Medium', value: 'medium' },
+        { label: 'Small', value: 'small' },
+        { label: 'Mini', value: 'mini' }
       ]
     }
   },
@@ -40,9 +40,9 @@ export default {
     handleChange (value) {
       this.sizeSet(value)
       this.$notify({
-        title: '提示',
+        title: 'Prompt',
         dangerouslyUseHTMLString: true,
-        message: '已更新页面内 <b>组件</b> 的 <b>默认尺寸</b><br/>例如按钮大小，<b>非字号</b>',
+        message: 'The default <b>size of <b>component<b> in the updated page<b><br>such as button size,<b>not font size<b>',
         type: 'success'
       })
     },

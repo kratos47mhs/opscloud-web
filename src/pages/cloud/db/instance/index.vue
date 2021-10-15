@@ -59,7 +59,7 @@
               <el-form-item label="可用性">
                 <span>{{ props.row.attributeMap.AvailabilityValue }}</span>
               </el-form-item>
-              <el-form-item label="数据库" width="50">
+              <el-form-item label="Database" width="50">
                 <div class="tag-group">
                   <el-tag style="margin-left: 5px"
                           v-for="item in props.row.databases"
@@ -86,7 +86,7 @@
             </el-tag>
           </template>
         </el-table-column>
-        <el-table-column prop="databases.length" label="数据库" width="80"></el-table-column>
+        <el-table-column prop="databases.length" label="Database" width="80"></el-table-column>
         <el-table-column prop="accounts.length" label="授权" width="80"></el-table-column>
         <el-table-column prop="dbInstanceDescription" label="描述"></el-table-column>
         <el-table-column prop="engine" label="engine" width="100">

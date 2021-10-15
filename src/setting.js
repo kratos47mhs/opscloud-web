@@ -1,54 +1,54 @@
 export default {
-  // 快捷键
-  // 支持快捷键 例如 ctrl+shift+s
+  // Hot-Key
+  // Support shortcut keys such as ctrl+shift+s
   hotkey: {
     search: {
       open: 's',
       close: 'esc'
     }
   },
-  // 侧边栏默认折叠状态
+  // The sidebar is collapsed by default
   menu: {
     asideCollapse: false
   },
-  // 在读取持久化数据失败时默认页面
+  // Default page when reading persistent data fails
   page: {
     opened: [
       {
         name: 'index',
         fullPath: '/index',
         meta: {
-          title: '首页',
+          title: 'HomePage',
           auth: false
         }
       }
     ]
   },
-  // 菜单搜索
+  // Menu search
   search: {
     enable: true
   },
-  // 注册的主题
+  // Registered subject
   theme: {
     list: [
       {
-        title: 'd2admin 经典',
+        title: 'D2admin Classic',
         name: 'd2',
         preview: 'image/theme/d2/preview@2x.png'
       },
       {
-        title: '紫罗兰',
+        title: 'Violet',
         name: 'violet',
         preview: 'image/theme/violet/preview@2x.png'
       },
       {
-        title: '简约线条',
+        title: 'Simple Lines',
         name: 'line',
         backgroundImage: 'image/theme/line/bg.jpg',
         preview: 'image/theme/line/preview@2x.png'
       },
       {
-        title: '流星',
+        title: 'Star',
         name: 'star',
         backgroundImage: 'image/theme/star/bg.jpg',
         preview: 'image/theme/star/preview@2x.png'
@@ -60,7 +60,7 @@ export default {
       }
     ]
   },
-  // 是否默认开启页面切换动画
+  // Whether to turn on page switching animation by default
   transition: {
     active: true
   }

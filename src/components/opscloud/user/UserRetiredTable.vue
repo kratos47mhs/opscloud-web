@@ -30,7 +30,7 @@
                 </el-tag>
               </div>
             </el-form-item>
-            <el-form-item label="服务器组">
+            <el-form-item label="Server group">
               <div class="tag-group">
                 <el-tag style="margin-right: 5px"
                         v-for="item in props.row.serverGroups"
@@ -66,7 +66,7 @@
       </el-table-column>
       <el-table-column prop="email" label="邮箱"></el-table-column>
       <el-table-column prop="userGroups.length" label="用户组"></el-table-column>
-      <el-table-column prop="serverGroups.length" label="服务器组"></el-table-column>
+      <el-table-column prop="serverGroups.length" label="Server group"></el-table-column>
       <el-table-column prop="ramUsers.length" label="阿里云RAM账户"></el-table-column>
       <el-table-column prop="lastLogin" label="最后登录时间"></el-table-column>
       <el-table-column fixed="right" label="操作" width="100">

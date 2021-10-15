@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import D2ContainerFrame from '@/components/d2-container-frame/index.bak.vue'
 
 describe('d2-container-frame', () => {
-  // 存在且是Vue组件实例
+  // Exists and is a Vue component instance
   it('is a vue instance', () => {
     const wrapper = mount(D2ContainerFrame, {
       stubs: ['d2-container']
@@ -12,7 +12,7 @@ describe('d2-container-frame', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-  // 包含特定类名
+  // Include specific class name
   it('contains specific classnames', () => {
     const wrapper = mount(D2ContainerFrame, {
       stubs: ['d2-container']

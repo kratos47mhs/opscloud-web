@@ -12,7 +12,7 @@
           </el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="服务器组" prop="serverGroupId">
+      <el-form-item label="Server group" prop="serverGroupId">
         <el-select v-model.trim="upstreamData.serverGroupId" class="search" filterable clearable
                    remote reserve-keyword placeholder="输入关键词搜组" :remote-method="getServerGroup"
                    @change="getBackend" :disabled="formStatus.isUpdate">
@@ -24,7 +24,7 @@
           </el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="服务器" v-show="upstreamData.backendType ===1">
+      <el-form-item label="Server" v-show="upstreamData.backendType ===1">
         <el-select v-model.trim="upstreamData.serverId" class="search" clearable filterable
                    :disabled="serverOptions === [] || formStatus.isUpdate">
           <el-option
@@ -96,11 +96,11 @@ export default {
       backendTypeOptions: [
         {
           value: 1,
-          label: '服务器'
+          label: 'Server'
         },
         {
           value: 2,
-          label: '服务器组'
+          label: 'Server group'
         }
       ],
       envTypeOptions: [],

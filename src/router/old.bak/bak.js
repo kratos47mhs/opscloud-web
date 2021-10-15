@@ -23,7 +23,7 @@ const frameIn = [
   //   path: 'page1',
   //   name: 'page1',
   //   meta: {
-  //     title: '页面 1',
+  //     title: 'Page 1',
   //     auth: true
   //   },
   //   component: _import('demo/page1')
@@ -32,7 +32,7 @@ const frameIn = [
   //   path: 'page2',
   //   name: 'page2',
   //   meta: {
-  //     title: '页面 2',
+  //     title: 'Page 2',
   //     auth: true
   //   },
   //   component: _import('demo/page2')
@@ -41,7 +41,7 @@ const frameIn = [
   //   path: 'page3',
   //   name: 'page3',
   //   meta: {
-  //     title: '页面 3',
+  //     title: 'Page 3',
   //     auth: true
   //   },
   //   component: _import('demo/page3')

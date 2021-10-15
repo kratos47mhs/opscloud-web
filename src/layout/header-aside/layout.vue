@@ -3,11 +3,11 @@
     class="d2-layout-header-aside-group"
     :style="styleLayoutMainGroup"
     :class="{grayMode: grayActive}">
-    <!-- 半透明遮罩 -->
+    <!-- Translucent mask -->
     <div class="d2-layout-header-aside-mask"></div>
-    <!-- 主体内容 -->
+    <!-- Main content -->
     <div class="d2-layout-header-aside-content" flex="dir:top">
-      <!-- 顶栏 -->
+      <!-- Top bar -->
       <div
         class="d2-theme-header"
         :style="{
@@ -23,9 +23,9 @@
           <d2-icon name="bars"/>
         </div>
         <d2-menu-header flex-box="1"/>
-        <!-- 顶栏右侧 -->
+        <!-- Right side of top bar -->
         <div class="d2-header-right" flex-box="0">
-          <!-- 如果你只想在开发环境显示这个按钮请添加 v-if="$env === 'development'" -->
+          <!-- If you only want to display this button in the development environment, please add v-if="$env === 'development'" -->
 <!--          <d2-header-search @click="handleSearchClick"/>-->
 <!--          <d2-header-log/>-->
           <d2-header-fullscreen/>
@@ -36,9 +36,9 @@
           <d2-header-user/>
         </div>
       </div>
-      <!-- 下面 主体 -->
+      <!-- Below the main body -->
       <div class="d2-theme-container" flex-box="1" flex>
-        <!-- 主体 侧边栏 -->
+        <!-- Main body sidebar -->
         <div
           flex-box="0"
           ref="aside"
@@ -49,9 +49,9 @@
           }">
           <d2-menu-side/>
         </div>
-        <!-- 主体 -->
+        <!-- MainBody -->
         <div class="d2-theme-container-main" flex-box="1" flex>
-          <!-- 搜索 -->
+          <!-- Search -->
           <transition name="fade-scale">
             <div v-if="searchActive" class="d2-theme-container-main-layer" flex>
               <d2-panel-search
@@ -59,14 +59,14 @@
                 @close="searchPanelClose"/>
             </div>
           </transition>
-          <!-- 内容 -->
+          <!-- Contents -->
           <transition name="fade-scale">
             <div v-if="!searchActive" class="d2-theme-container-main-layer" flex="dir:top">
               <!-- tab -->
 <!--              <div class="d2-theme-container-main-header" flex-box="0">-->
 <!--                <d2-tabs/>-->
 <!--              </div>-->
-              <!-- 页面 -->
+              <!-- Page -->
               <div class="d2-theme-container-main-body" flex-box="1">
                 <transition :name="transitionActive ? 'fade-transverse' : ''">
                   <keep-alive :include="keepAlive">
@@ -116,9 +116,9 @@ export default {
   },
   data () {
     return {
-      // [侧边栏宽度] 正常状态
+      // [Sidebar width] Normal state
       asideWidth: '200px',
-      // [侧边栏宽度] 折叠状态
+      // [Sidebar width] collapsed state
       asideWidthCollapse: '65px'
     }
   },
@@ -133,7 +133,7 @@ export default {
       themeActiveSetting: 'theme/activeSetting'
     }),
     /**
-     * @description 最外层容器的背景图片样式
+     * @description Background image style of the outermost container
      */
     styleLayoutMainGroup () {
       return {
@@ -148,7 +148,7 @@ export default {
       'asideCollapseToggle'
     ]),
     /**
-     * 接收点击切换侧边栏的按钮
+     * Receive a click on the button to switch the sidebar
      */
     handleToggleAside () {
       this.asideCollapseToggle()
@@ -158,6 +158,6 @@ export default {
 </script>
 
 <style lang="scss">
-// 注册主题
+// Register the subject
 @import '~@/assets/style/theme/register.scss';
 </style>

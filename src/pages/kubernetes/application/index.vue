@@ -17,7 +17,7 @@
             <div>{{ props.row.comment }}</div>
           </template>
         </el-table-column>
-        <el-table-column prop="serverGroupId" label="服务器组">
+        <el-table-column prop="serverGroupId" label="Server group">
           <template slot-scope="props">
             <span v-if="props.row.serverGroup !== null">{{ props.row.serverGroup.name }}</span>
           </template>

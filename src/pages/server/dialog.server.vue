@@ -7,7 +7,7 @@
       </el-form-item>
     </el-form>
     <el-form :model="server">
-      <el-form-item label="服务器组" :label-width="form.labelWidth">
+      <el-form-item label="Server group" :label-width="form.labelWidth">
         <el-select v-model.trim="server.serverGroupId" filterable clearable
                    remote reserve-keyword placeholder="输入关键词搜组类型" :remote-method="getServerGroup"
                    :loading="loading">

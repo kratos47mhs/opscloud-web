@@ -62,13 +62,13 @@
               <el-form-item label="服务器描述">
                 <span>{{ props.row.comment }}</span>
               </el-form-item>
-              <el-form-item label="服务器组">
+              <el-form-item label="Server group">
                 <span>{{ props.row.serverGroup.name }}</span>
               </el-form-item>
               <el-form-item label="服务器组描述">
                 <span>{{ props.row.serverGroup.comment }}</span>
               </el-form-item>
-              <el-form-item label="服务器组类型">
+              <el-form-item label="Server group type">
                 <el-tag disable-transitions :style="{ color: props.row.serverGroup.serverGroupType.color }">
                   {{ props.row.serverGroup.serverGroupType.name }}
                 </el-tag>

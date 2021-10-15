@@ -2,7 +2,7 @@
 
 **中文** | [English](https://github.com/d2-projects/d2-admin-start-kit)
 
-## 预览
+## Preview
 
 | 位置 | 链接 | 部署位置 | 状态 |
 | --- | --- | --- | --- |

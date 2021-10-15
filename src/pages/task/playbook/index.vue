@@ -17,7 +17,7 @@
             </el-option>
           </el-select>
           <el-tooltip content="预览playbook脚本" placement="bottom" effect="light">
-            <el-button @click="previewPlaybook" :style="searchBarStyle">预览</el-button>
+            <el-button @click="previewPlaybook" :style="searchBarStyle">Preview</el-button>
           </el-tooltip>
           <el-tooltip content="批量命令执行" placement="bottom" effect="light">
             <el-button @click="executorPlaybook" :style="searchBarStyle">执行</el-button>

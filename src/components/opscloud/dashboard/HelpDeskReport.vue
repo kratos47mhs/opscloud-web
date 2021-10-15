@@ -78,7 +78,7 @@ export default {
           }
         },
         legend: {
-          data: ['桌面维护', '资产管理', '网络管理', '用户管理', '邮箱管理', 'IT知识库', '监控管理', '行为管理']
+          data: ['桌面维护', '资产管理', '网络管理', 'User Management', '邮箱管理', 'IT知识库', '监控管理', '行为管理']
         },
         grid: {
           left: '3%',
@@ -122,7 +122,7 @@ export default {
             data: type2
           },
           {
-            name: '用户管理',
+            name: 'User Management',
             type: 'bar',
             stack: '总量',
             label: {

@@ -38,7 +38,7 @@
       text () {
         switch (this.value) {
           case 0:
-            return '服务器'
+            return 'Server'
           case 1:
             return 'VM'
           case 2:

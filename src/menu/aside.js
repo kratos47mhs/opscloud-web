@@ -1,35 +1,35 @@
-// 菜单 侧边栏
+// Menu sidebar
 export default [
-  // { path: '/index', title: '首页', icon: 'home' },
+  // { path: '/index', title: 'HomePage', icon: 'home' },
   // {
-  //   title: '页面',
+  //   title: 'Page',
   //   icon: 'folder-o',
   //   children: [
-  //     { path: '/page1', title: '页面 1' },
-  //     { path: '/page2', title: '页面 2' },
-  //     { path: '/page3', title: '页面 3' }
+  //     { path: '/page1', title: 'Page 1' },
+  //     { path: '/page2', title: 'Page 2' },
+  //     { path: '/page3', title: 'Page 3' }
   //   ]
   // },
   // {
-  //   title: '全局配置',
+  //   title: 'Global configuration',
   //   icon: 'cogs',
   //   children: [
-  //     { path: '/env', title: '环境配置', icon: 'cog' },
-  //     { path: '/tag', title: '标签配置', icon: 'cog' }
+  //     { path: '/env', title: 'Environment configuration', icon: 'cog' },
+  //     { path: '/tag', title: 'Tag configuration', icon: 'cog' }
   //   ]
   // },
   // {
-  //   title: '服务器管理',
+  //   title: 'Server management',
   //   icon: 'server',
   //   children: [
-  //     { path: '/server', title: '服务器', icon: 'server' },
-  //     { path: '/server/attribute', title: '服务器属性', icon: 'tag' },
-  //     { path: '/server/group', title: '服务器组', icon: 'window-restore' },
-  //     { path: '/server/group/type', title: '服务器组类型', icon: 'align-justify' }
+  //     { path: '/server', title: 'Server', icon: 'server' },
+  //     { path: '/server/attribute', title: 'Server properties', icon: 'tag' },
+  //     { path: '/server/group', title: 'Server group', icon: 'window-restore' },
+  //     { path: '/server/group/type', title: 'Server group type', icon: 'align-justify' }
   //   ]
   // },
   // {
-  //   title: '云主机管理',
+  //   title: 'Cloud host management',
   //   icon: 'cloud',
   //   children: [
   //     { path: '/cloud/server/ecs', title: 'ECS', iconSvg: 'aliyun-ecs' },
@@ -41,13 +41,13 @@ export default [
   //   ]
   // },
   // {
-  //   title: '云数据库',
+  //   title: 'Cloud database',
   //   icon: 'database',
   //   children: [
-  //     { path: '/cloud/db/instance', title: '数据库实例', icon: 'cube' },
-  //     { path: '/cloud/db/database', title: '数据库', icon: 'cubes' },
-  //     { path: '/cloud/db/database/slowlog', title: '慢日志', icon: 'warning' },
-  //     { path: '/cloud/db/my/database', title: '我的数据库', icon: 'diamond' }
+  //     { path: '/cloud/db/instance', title: 'Database instance', icon: 'cube' },
+  //     { path: '/cloud/db/database', title: 'Database', icon: 'cubes' },
+  //     { path: '/cloud/db/database/slowlog', title: 'Slow log', icon: 'warning' },
+  //     { path: '/cloud/db/my/database', title: 'My database', icon: 'diamond' }
   //   ]
   // },
   // {
@@ -55,12 +55,12 @@ export default [
   //   icon: 'empire',
   //   children: [
   //     { path: '/jump/jumpserver/settings', title: '设置', icon: 'cog' },
-  //     { path: '/jump/jumpserver/user', title: '用户管理', icon: 'user' },
+  //     { path: '/jump/jumpserver/user', title: 'User Management', icon: 'user' },
   //     { path: '/jump/jumpserver/asset', title: '资产管理', icon: 'server' }
   //   ]
   // },
   // {
-  //   title: '用户管理',
+  //   title: 'User Management',
   //   icon: 'user-circle',
   //   children: [
   //     { path: '/user', title: '用户', icon: 'user' },

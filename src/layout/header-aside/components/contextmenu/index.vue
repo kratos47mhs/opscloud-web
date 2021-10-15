@@ -28,7 +28,7 @@ export default {
     flag: {
       get () {
         if (this.visible) {
-          // 注册全局监听事件 [ 目前只考虑鼠标解除触发 ]
+          // Register the global monitoring event [Currently, only the mouse dismissal trigger is considered]
           window.addEventListener('mousedown', this.watchContextmenu)
         }
         return this.visible
@@ -52,7 +52,7 @@ export default {
     }
   },
   mounted () {
-    // 将菜单放置到body下
+    // Place the menu under the body
     document.querySelector('body').appendChild(this.$el)
   }
 }

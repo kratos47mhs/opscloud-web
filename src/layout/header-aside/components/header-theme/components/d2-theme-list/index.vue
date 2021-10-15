@@ -7,7 +7,7 @@
       align="center"
       width="160"/>
     <el-table-column
-      label="预览"
+      label="Preview"
       width="120">
       <div
         slot-scope="scope"
@@ -26,7 +26,7 @@
           type="success"
           icon="el-icon-check"
           round>
-          已激活
+          Activated
         </el-button>
         <el-button
           v-else

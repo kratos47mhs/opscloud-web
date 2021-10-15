@@ -6,7 +6,7 @@
       </div>
       <el-col>
         <el-tabs tab-position="top" style="height: 200px;">
-          <el-tab-pane label="用户管理">
+          <el-tab-pane label="User Management">
             <!--用户搜索-->
             <div style="margin-bottom: 5px">
               <el-row style="margin-bottom: 5px">

@@ -88,7 +88,7 @@ const frameIn = [
         component: () => import('@/pages/env'),
         meta: {
           auth: true,
-          title: '环境配置'
+          title: 'Environment configuration'
         }
       },
       // tag
@@ -98,7 +98,7 @@ const frameIn = [
         component: () => import('@/pages/tag'),
         meta: {
           auth: true,
-          title: '标签配置'
+          title: 'Tag configuration'
         }
       },
       {
@@ -135,7 +135,7 @@ const frameIn = [
         component: () => import('@/pages/server'),
         meta: {
           auth: true,
-          title: '服务器'
+          title: 'Server'
         }
       },
       {
@@ -144,7 +144,7 @@ const frameIn = [
         component: () => import('@/pages/server/attribute'),
         meta: {
           auth: true,
-          title: '服务器属性'
+          title: 'Server properties'
         }
       },
       {
@@ -153,7 +153,7 @@ const frameIn = [
         component: () => import('@/pages/server/group'),
         meta: {
           auth: true,
-          title: '服务器组'
+          title: 'Server group'
         }
       },
       {
@@ -162,7 +162,7 @@ const frameIn = [
         component: () => import('@/pages/server/group/type'),
         meta: {
           auth: true,
-          title: '服务器组类型'
+          title: 'Server group type'
         }
       },
       // opscloud auth
@@ -263,7 +263,7 @@ const frameIn = [
         component: () => import('@/pages/cloud/db/database'),
         meta: {
           auth: true,
-          title: '数据库'
+          title: 'Database'
         }
       },
       {
@@ -272,7 +272,7 @@ const frameIn = [
         component: () => import('@/pages/cloud/db/database/slowlog'),
         meta: {
           auth: true,
-          title: '慢日志'
+          title: 'Slow log'
         }
       },
       {
@@ -545,7 +545,7 @@ const frameIn = [
         component: () => import('@/pages/user'),
         meta: {
           auth: true,
-          title: '用户管理'
+          title: 'User Management'
         }
       },
       {

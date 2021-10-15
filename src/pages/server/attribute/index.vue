@@ -2,7 +2,7 @@
   <d2-container>
     <template>
       <div>
-        <h1>服务器(组)属性</h1>
+        <h1>Server(组)属性</h1>
       </div>
       <el-row :gutter="20">
         <el-col :span="10">
@@ -51,8 +51,8 @@
                 </el-pagination>
               </el-row>
             </el-tab-pane>
-            <el-tab-pane label="服务器属性">
-              <!--服务器-->
+            <el-tab-pane label="Server properties">
+              <!--Server-->
               <el-row style="margin-bottom: 5px">
                 <el-table :data="serverTableData" style="width: 100%" v-loading="loading">
                   <el-table-column prop="name" label="名称"></el-table-column>
@@ -125,7 +125,7 @@
           marginLeft: '5px'
         },
         formServerAttributeStatus: {
-          serverAttributeTitle: '服务器属性',
+          serverAttributeTitle: 'Server properties',
           groupAttributeTitle: '服务器组属性'
         },
         showServerAttributeCard: false,

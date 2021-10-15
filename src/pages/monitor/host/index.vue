@@ -65,10 +65,10 @@
         <el-table-column type="expand">
           <template slot-scope="props">
             <el-form label-position="left" inline class="table-expand">
-              <el-form-item label="服务器组">
+              <el-form-item label="Server group">
                 <span>{{ props.row.serverGroup.name }}</span>
               </el-form-item>
-              <el-form-item label="服务器组类型">
+              <el-form-item label="Server group type">
                 <el-tag disable-transitions :style="{ color: props.row.serverGroup.serverGroupType.color }">
                   {{ props.row.serverGroup.serverGroupType.name }}
                 </el-tag>

@@ -2,30 +2,30 @@
 import Vue from 'vue'
 import i18n from './i18n'
 import App from './App'
-// 核心插件
+// Core Plugin
 import d2Admin from '@/plugin/d2admin'
 // store
 import store from '@/store/index'
 
-// [ 可选组件 ]D2-Crud
+// [Optional Components]D2-Crud
 import D2Crud from '@d2-projects/d2-crud'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-// 菜单和路由设置
+// Menu And Routing Settings
 import router from './router'
 import menuHeader from '@/menu/header'
 // import menuAside from '@/menu/aside'
 import { frameInRoutes } from '@/router/routes'
-// 菜单工具类
+// Menu tools
 import util from '@/libs/util.js'
 import VueClipboard from 'vue-clipboard2'
 
-// 核心插件
+// Core Plugin
 Vue.use(d2Admin)
 
-// 可选插件组件
+// Optional plug-in components
 Vue.use(ElementUI)
 Vue.use(D2Crud)
 Vue.use(VueClipboard)
@@ -36,24 +36,24 @@ new Vue({
   i18n,
   render: h => h(App),
   created () {
-    // 处理路由 得到每一级的路由设置
+    // Process routing Get the routing settings of each level
     this.$store.commit('d2admin/page/init', frameInRoutes)
-    // 设置顶栏菜单
+    // Set top bar menu
     this.$store.commit('d2admin/menu/headerSet', menuHeader)
-    // 设置侧边栏菜单
+    // Set sidebar menu
     // this.$store.commit('d2admin/menu/asideSet', menuAside)
     util.menu.init()
-    // 初始化菜单搜索功能
+    // Initialize the menu search function
     this.$store.commit('d2admin/search/init', menuHeader)
   },
   mounted () {
-    // 展示系统信息
+    // Display system information
     this.$store.commit('d2admin/releases/versionShow')
-    // 用户登录后从数据库加载一系列的设置
+    // Load a series of settings from the database after the user logs in
     this.$store.dispatch('d2admin/account/load')
-    // 获取并记录用户 UA
+    // Acquire and record users UA
     this.$store.commit('d2admin/ua/get')
-    // 初始化全屏监听
+    // Initialize full-screen monitoring
     this.$store.dispatch('d2admin/fullscreen/listen')
   }
 }).$mount('#app')

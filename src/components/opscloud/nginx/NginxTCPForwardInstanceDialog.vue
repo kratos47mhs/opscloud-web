@@ -11,7 +11,7 @@
           </el-input>
         </div>
       </el-form-item>
-      <el-form-item label="服务器组" prop="serverGroupId">
+      <el-form-item label="Server group" prop="serverGroupId">
         <el-select v-model.trim="instanceData.serverGroupId" class="search" filterable clearable
                    remote reserve-keyword placeholder="输入关键词搜组" :remote-method="getServerGroup"
                    @change="getUpstream">

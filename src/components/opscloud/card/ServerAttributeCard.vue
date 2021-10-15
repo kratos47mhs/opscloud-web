@@ -14,7 +14,7 @@
                   width="100%"
                   height="200" :options="options"></editor>
           <div style="margin-top: 5px">
-            <el-button type="success" plain size="mini" @click="updateServerGroupAttribute(attributeGroup)">预览
+            <el-button type="success" plain size="mini" @click="updateServerGroupAttribute(attributeGroup)">Preview
             </el-button>
             <el-button type="info" plain size="mini" @click="updateServerGroupAttribute(attributeGroup)">智能
             </el-button>

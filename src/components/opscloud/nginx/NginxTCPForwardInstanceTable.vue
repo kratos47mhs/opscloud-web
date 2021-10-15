@@ -121,10 +121,10 @@ export default {
   filters: {
     backEndTypeFilters (backEndType) {
       if (backEndType === 1) {
-        return '服务器'
+        return 'Server'
       }
       if (backEndType === 2) {
-        return '服务器组'
+        return 'Server group'
       }
       return ''
     }

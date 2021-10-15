@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>icon.ico">
-    <!-- 使用 CDN 加速的 CSS 文件，配置在 vue.config.js 下 -->
+    <!-- Use CDN accelerated CSS files, configured under vue.config.js -->
     <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
     <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
     <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
     <% } %>
-    <!-- 使用 CDN 加速的 JS 文件，配置在 vue.config.js 下 -->
+    <!-- Use CDN accelerated JS files, configured under vue.config.js -->
     <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
     <link href="<%= htmlWebpackPlugin.options.cdn.js[i] %>" rel="preload" as="script">
     <% } %>
@@ -43,10 +43,10 @@
             src="./image/loading/loading-spin.svg"
             alt="loading">
           <div class="d2-home__title">
-            正在加载资源
+            Loading resources
           </div>
           <div class="d2-home__sub-title">
-            初次加载资源可能需要较多时间 请耐心等待
+            Loading resources for the first time may take more time, please be patient
           </div>
         </div>
         <div class="d2-home__footer">
@@ -58,7 +58,7 @@
         </div>
       </div>
     </div>
-    <!-- 使用 CDN 加速的 JS 文件，配置在 vue.config.js 下 -->
+    <!-- Use CDN accelerated JS files, configured under vue.config.js -->
     <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
     <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
     <% } %>

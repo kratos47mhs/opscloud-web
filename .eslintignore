@@ -1,14 +1,14 @@
-# 忽略目录
+# Ignore directory
 build/
 tests/
 node_modules/
 
-# D2CRUD 演示
+# D2CRUD demo
 src/views/demo/d2-crud/
 
-# node 覆盖率文件
+# node coverage file
 coverage/
 
-# 忽略文件
+# Ignore files
 **/*-min.js
 **/*.min.js

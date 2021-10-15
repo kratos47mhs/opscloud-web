@@ -9,7 +9,7 @@
               <el-card v-if="userDeptWarning" shadow="never">
                 <el-alert title="您尚未加入部门" type="warning" show-icon style="margin-bottom: 5px"
                           :closable="false">
-                  <span>前往 用户管理-部门管理，选中部门后点加入</span>
+                  <span>前往 User Management-部门管理，选中部门后点加入</span>
                   <el-button type="text" style="margin-left: 10px; padding: 3px 0" @click="handlerOpenDeptMgmt">打开部门管理
                   </el-button>
                 </el-alert>

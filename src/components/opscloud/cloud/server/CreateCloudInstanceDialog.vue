@@ -59,7 +59,7 @@
     <!--    通用选项-->
     <el-card class="box-card" shadow="never" v-show="step.active === 2">
       <el-form :model="templateData">
-        <el-form-item label="服务器组" :label-width="formStatus.labelWidth" :required="true">
+        <el-form-item label="Server group" :label-width="formStatus.labelWidth" :required="true">
           <el-select v-model.trim="createInstanceData.serverGroupId" filterable clearable
                      remote reserve-keyword placeholder="输入关键词搜组类型" :remote-method="getServerGroup">
             <el-option

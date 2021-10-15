@@ -73,7 +73,7 @@ export default {
         label: '网络管理'
       }, {
         value: 3,
-        label: '用户管理'
+        label: 'User Management'
       }, {
         value: 4,
         label: '邮箱管理'
@@ -112,7 +112,7 @@ export default {
         return '网络管理'
       }
       if (helpdeskType === 3) {
-        return '用户管理'
+        return 'User Management'
       }
       if (helpdeskType === 4) {
         return '邮箱管理'

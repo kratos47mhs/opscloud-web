@@ -11,8 +11,8 @@ const util = {
 }
 
 /**
- * @description 更新标题
- * @param {String} title 标题
+ * @description Update title
+ * @param {String} title Title
  */
 util.title = function (titleText) {
   const processTitle = process.env.VUE_APP_TITLE || 'D2Admin'
@@ -20,8 +20,8 @@ util.title = function (titleText) {
 }
 
 /**
- * @description 打开新页面
- * @param {String} url 地址
+ * @description Open new page
+ * @param {String} url Address
  */
 util.open = function (url) {
   var a = document.createElement('a')
@@ -34,7 +34,7 @@ util.open = function (url) {
 }
 
 /**
- * 返回UUID
+ * Return UUID
  * @returns {string}
  */
 util.uuid = function () {
@@ -52,7 +52,7 @@ util.uuid = function () {
 
 /**
  * Terminal Tools
- * 返回UUID
+ * Return UUID
  * @returns {string}
  */
 util.instanceId = function (id) {
@@ -60,7 +60,7 @@ util.instanceId = function (id) {
 }
 
 /**
- * 返回ws
+ * Return ws
  * @returns {string}
  */
 util.wsUrl = function (wsUrl) {

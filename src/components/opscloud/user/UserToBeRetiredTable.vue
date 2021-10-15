@@ -22,7 +22,7 @@
                 </el-tag>
               </div>
             </el-form-item>
-            <el-form-item label="服务器组">
+            <el-form-item label="Server group">
               <div class="tag-group">
                  <span v-for="item in props.row.serverGroups" :key="item.id">
                     <el-tooltip class="item" effect="light" :content="item.comment || '没有填写'" placement="bottom">
@@ -71,7 +71,7 @@
       </el-table-column>
       <el-table-column prop="email" label="邮箱"></el-table-column>
       <el-table-column prop="userGroups.length" label="用户组"></el-table-column>
-      <el-table-column prop="serverGroups.length" label="服务器组"></el-table-column>
+      <el-table-column prop="serverGroups.length" label="Server group"></el-table-column>
       <el-table-column prop="ramUsers.length" label="阿里云RAM账户"></el-table-column>
       <el-table-column prop="ago" label="时间"></el-table-column>
       <el-table-column fixed="right" label="操作" width="180">

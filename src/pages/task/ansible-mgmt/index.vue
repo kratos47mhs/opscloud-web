@@ -14,7 +14,7 @@
             <el-form>
               <el-form-item label="主机配置文件">
                 <el-tooltip content="预览ansible主机配置文件" placement="bottom" effect="light">
-                  <el-button @click="previewAnsibleHosts">预览</el-button>
+                  <el-button @click="previewAnsibleHosts">Preview</el-button>
                 </el-tooltip>
                 <el-tooltip content="创建ansible主机配置文件" placement="bottom" effect="light">
                   <el-button @click="createAnsibleHostsCfg" :loading="creating">创建</el-button>

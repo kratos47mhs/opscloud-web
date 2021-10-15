@@ -76,7 +76,7 @@ export default {
         label: '网络管理'
       }, {
         value: 3,
-        label: '用户管理'
+        label: 'User Management'
       }, {
         value: 4,
         label: '邮箱管理'
