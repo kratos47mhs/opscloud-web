@@ -14,12 +14,12 @@ export function getUserRoleType (value) {
 export function getUserRoleText (value) {
   switch (value) {
     case 'User':
-      return '用户'
+      return 'User'
     case 'Auditor':
-      return '审计员'
+      return 'Auditor'
     case 'Admin':
-      return '管理员'
+      return 'Administrator'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }

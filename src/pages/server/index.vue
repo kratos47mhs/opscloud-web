@@ -23,7 +23,7 @@
             :value="item.envType">
           </el-option>
         </el-select>
-        <el-select v-model="queryParam.isActive" clearable placeholder="有效" class="select-bar">
+        <el-select v-model="queryParam.isActive" clearable placeholder="Valid" class="select-bar">
           <el-option
             v-for="item in activeOptions"
             :key="item.value"
@@ -103,11 +103,11 @@
             <el-tag disable-transitions :style="{ color: scope.row.env.color }">{{ scope.row.env.envName }}</el-tag>
           </template>
         </el-table-column>
-        <el-table-column prop="isActive" label="有效" width="80">
+        <el-table-column prop="isActive" label="Valid" width="80">
           <template slot-scope="scope">
             <el-tag disable-transitions :type="scope.row.isActive ? 'success' : 'info'">{{
               scope.row.isActive ?
-              '有效' : '无效'
+              'Valid' : 'Invalid'
               }}
             </el-tag>
           </template>
@@ -186,18 +186,18 @@
 
   const activeOptions = [{
     value: true,
-    label: '有效'
+    label: 'Valid'
   }, {
     value: false,
-    label: '无效'
+    label: 'Invalid'
   }]
 
   const serverStatusOptions = [{
     value: 0,
-    label: '离线'
+    label: 'Offline'
   }, {
     value: 1,
-    label: '在线'
+    label: 'Online'
   }, {
     value: -1,
     label: '未知'

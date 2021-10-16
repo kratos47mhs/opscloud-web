@@ -16,7 +16,7 @@ export function getStatusTagType (value) {
 export function getStatusTagText (value) {
   switch (value) {
     case 0:
-      return '新建'
+      return 'New'
     case 1:
       return '已录入'
     case 2:
@@ -24,36 +24,36 @@ export function getStatusTagText (value) {
     case 3:
       return '删除'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
 /**
- * 服务器登录类型
+ * Server login type
  * @param value
  * @returns {string}
  */
 export function getLoginTypeText (value) {
   switch (value) {
     case 0:
-      return '密钥'
+      return 'Key'
     case 1:
-      return '密码'
+      return 'Password'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
 export function getMonitorStatusText (value) {
   switch (value) {
     case -1:
-      return '未监控'
+      return 'Not monitored'
     case 0:
-      return '启用'
+      return 'Enable'
     case 1:
-      return '禁用'
+      return 'Disable'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
@@ -87,12 +87,12 @@ export function getServerTypeText (value) {
     case 6:
       return 'zabbix host'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
 /**
- * 返回换算后的内存单位GiB
+ * Return the converted memory unit GiB
  * @param value
  * @returns {string}
  */
@@ -117,25 +117,25 @@ export function getServerStatusType (value) {
 export function getServerStatusText (value) {
   switch (value) {
     case 0:
-      return '离线'
+      return 'Offline'
     case 1:
-      return '在线'
+      return 'Online'
     case -1:
-      return '不确定'
+      return 'Uncertain'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
-// 付费类型
+// Payment type
 export function getChargeTypeText (value) {
   switch (value) {
     case 'PrePaid':
-      return '包年包月'
+      return 'Yearly and monthly'
     case 'PostPaid':
-      return '按量付费'
+      return 'Pay-as-you-go'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 
@@ -166,12 +166,12 @@ export function getRenewalStatus (value) {
 export function getRenewalStatusText (value) {
   switch (value) {
     case 'AutoRenewal':
-      return '自动续费'
+      return 'Auto Renewal'
     case 'Normal':
-      return '手动续费'
+      return 'Manual Renewal'
     case 'NotRenewal':
-      return '不再续费'
+      return 'No longer Renew'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }

@@ -2,7 +2,7 @@
   <div>
     <el-row :gutter="20" style="margin-bottom: 5px; margin-left: 0px">
       <el-input v-model="queryParam.queryName" placeholder="关键字查询" class="input-search-bar"/>
-      <el-select v-model="queryParam.isActive" clearable placeholder="有效" class="search-bar">
+      <el-select v-model="queryParam.isActive" clearable placeholder="Valid" class="search-bar">
         <el-option
           v-for="item in activeOptions"
           :key="item.value"
@@ -38,9 +38,9 @@
       <el-table-column prop="imageName" label="镜像名称"></el-table-column>
       <el-table-column prop="regionId" label="地区id"></el-table-column>
       <el-table-column prop="imageSize" label="容量(GiB)"></el-table-column>
-      <el-table-column prop="osNameEn" label="系统"></el-table-column>
+      <el-table-column prop="osNameEn" label="System"></el-table-column>
       <el-table-column prop="creationTime" label="创建时间"></el-table-column>
-      <el-table-column prop="serverStatus" label="有效">
+      <el-table-column prop="serverStatus" label="Valid">
         <template slot-scope="scope">
           <el-tag class="filters" :type="scope.row.isActive | getActiveType" size="small">
             {{scope.row.isActive | getActiveText}}
@@ -55,7 +55,7 @@
       <el-table-column fixed="right" label="操作" width="280">
         <template slot-scope="scope">
           <el-button :type="scope.row.isActive === 0 ? 'success' : 'info'" plain size="mini"
-                     @click="setItemActive(scope.row)">{{scope.row.isActive === 0 ? '有效' : '无效'}}
+                     @click="setItemActive(scope.row)">{{scope.row.isActive === 0 ? 'Valid' : 'Invalid'}}
           </el-button>
           <el-button type="primary" plain size="mini" @click="addItem(scope.row)" v-show="scope.row.serverStatus == 0">
             导入
@@ -118,10 +118,10 @@
           label: '全部'
         }, {
           value: 0,
-          label: '无效'
+          label: 'Invalid'
         }, {
           value: 1,
-          label: '有效'
+          label: 'Valid'
         }],
         syncLoading: false
       }

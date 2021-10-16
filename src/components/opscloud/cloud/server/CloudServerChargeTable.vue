@@ -135,18 +135,18 @@
 
   const renewalStatusOptions = [{
     value: 'AutoRenewal',
-    label: '自动续费'
+    label: 'Auto Renewal'
   }, {
     value: 'Normal',
-    label: '手动续费'
+    label: 'Manual Renewal'
   }, {
     value: 'NotRenewal',
-    label: '不再续费'
+    label: 'No longer Renew'
   }]
 
   const statusOptions = [{
     value: 0,
-    label: '新建(未录入)'
+    label: 'New(未录入)'
   }, {
     value: 1,
     label: '已录入'

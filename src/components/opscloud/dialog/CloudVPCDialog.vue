@@ -6,7 +6,7 @@
       <el-tab-pane label="安全组配置" name="securityGroup">
         <el-input v-model.trim="querySecurityGroupParam.queryName" placeholder="关键字查询"
                   style="display: inline-block; max-width:200px"/>
-        <el-select v-model="querySecurityGroupParam.isActive" clearable placeholder="有效" style="margin-left: 5px">
+        <el-select v-model="querySecurityGroupParam.isActive" clearable placeholder="Valid" style="margin-left: 5px">
           <el-option
             v-for="item in activeOptions"
             :key="item.value"
@@ -19,7 +19,7 @@
           <el-table-column prop="securityGroupId" label="安全组id"></el-table-column>
           <el-table-column prop="securityGroupName" label="安全组名称"></el-table-column>
           <el-table-column prop="regionId" label="地区id"></el-table-column>
-          <el-table-column prop="isActive" label="有效">
+          <el-table-column prop="isActive" label="Valid">
             <template slot-scope="scope">
               <el-tag class="filters" :type="scope.row.isActive | getActiveType" size="small">
                 {{scope.row.isActive | getActiveText}}
@@ -29,7 +29,7 @@
           <el-table-column label="操作" width="80">
             <template slot-scope="scope">
               <el-button :type="scope.row.isActive === 0 ? 'success' : 'info'" plain size="mini"
-                         @click="setSecurityGroupActive(scope.row)">{{scope.row.isActive === 0 ? '有效' : '无效'}}
+                         @click="setSecurityGroupActive(scope.row)">{{scope.row.isActive === 0 ? 'Valid' : 'Invalid'}}
               </el-button>
             </template>
           </el-table-column>
@@ -43,7 +43,7 @@
       <el-tab-pane label="虚拟交换机配置" name="vswitch">
         <el-input v-model.trim="queryVswitchParam.queryName" placeholder="关键字查询"
                   style="display: inline-block; max-width:200px"/>
-        <el-select v-model="queryVswitchParam.isActive" clearable placeholder="有效" style="margin-left: 5px">
+        <el-select v-model="queryVswitchParam.isActive" clearable placeholder="Valid" style="margin-left: 5px">
           <el-option
             v-for="item in activeOptions"
             :key="item.value"
@@ -56,7 +56,7 @@
           <el-table-column prop="vswitchId" label="虚拟交换机id"></el-table-column>
           <el-table-column prop="vswitchName" label="虚拟交换机名称"></el-table-column>
           <el-table-column prop="zoneId" label="可用区"></el-table-column>
-          <el-table-column prop="isActive" label="有效">
+          <el-table-column prop="isActive" label="Valid">
             <template slot-scope="scope">
               <el-tag class="filters" :type="scope.row.isActive | getActiveType" size="small">
                 {{scope.row.isActive | getActiveText}}
@@ -66,7 +66,7 @@
           <el-table-column label="操作" width="80">
             <template slot-scope="scope">
               <el-button :type="scope.row.isActive === 0 ? 'success' : 'info'" plain size="mini"
-                         @click="setVswitchActive(scope.row)">{{scope.row.isActive === 0 ? '有效' : '无效'}}
+                         @click="setVswitchActive(scope.row)">{{scope.row.isActive === 0 ? 'Valid' : 'Invalid'}}
               </el-button>
             </template>
           </el-table-column>
@@ -129,10 +129,10 @@
           label: '全部'
         }, {
           value: 0,
-          label: '无效'
+          label: 'Invalid'
         }, {
           value: 1,
-          label: '有效'
+          label: 'Valid'
         }]
       }
     },

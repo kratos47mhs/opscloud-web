@@ -1,19 +1,19 @@
 export function getPhaseText (value) {
   switch (value) {
     case 'CREATED_TICKET':
-      return '新建'
+      return 'New'
     case 'APPLIED_TICKET':
-      return '提交申请'
+      return 'Submit Application'
     case 'ORG_APPROVAL':
-      return '上级审批'
+      return 'Superior Approval'
     case 'USERGROUP_APPROVAL':
-      return '用户组审批'
+      return 'User group approval'
     case 'CONFIGURATION':
-      return '运维配置阶段'
+      return 'Operation and maintenance configuration stage'
     case 'FINALIZED':
-      return '结束'
+      return 'Finalized'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }
 

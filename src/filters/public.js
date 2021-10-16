@@ -16,14 +16,14 @@ export function getActiveType (value) {
 export function getActiveText (value) {
   switch (value) {
     case true:
-      return '有效'
+      return 'Valid'
     case false:
-      return '无效'
+      return 'Invalid'
     case 1:
-      return '有效'
+      return 'Valid'
     case 0:
-      return '无效'
+      return 'Invalid'
     default:
-      return '未定义'
+      return 'Undefined'
   }
 }

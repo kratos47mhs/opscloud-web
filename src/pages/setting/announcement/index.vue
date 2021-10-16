@@ -17,7 +17,7 @@
           <template slot-scope="scope">
             <el-button type="primary" plain size="mini" @click="handlerEdit(scope.row)">编辑</el-button>
             <el-button :type="scope.row.valid ? 'success' : 'info'" plain size="mini"
-                       @click="handlerValid(scope.row)">{{ scope.row.isActive ? '有效' : '无效' }}
+                       @click="handlerValid(scope.row)">{{ scope.row.isActive ? 'Valid' : 'Invalid' }}
             </el-button>
             <el-popconfirm title="是否删除该公告？" @onConfirm="handlerDel(scope.row)">
               <el-button slot="reference" type="danger" plain size="mini" icon="el-icon-delete" style="margin-left: 10px">删除</el-button>

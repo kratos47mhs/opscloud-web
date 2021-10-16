@@ -62,7 +62,7 @@
         <el-switch
           v-model="instanceData.isWebSocket"
           active-color="#67C23A" inactive-color="#909399"
-          active-text="启用" inactive-text="不启用">
+          active-text="Enable" inactive-text="不启用">
         </el-switch>
       </el-form-item>
       <el-form-item label="ProxyTimeout" prop="proxyTimeout">

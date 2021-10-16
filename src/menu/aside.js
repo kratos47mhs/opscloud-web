@@ -63,7 +63,7 @@ export default [
   //   title: 'User Management',
   //   icon: 'user-circle',
   //   children: [
-  //     { path: '/user', title: '用户', icon: 'user' },
+  //     { path: '/user', title: 'User', icon: 'user' },
   //     { path: '/user/group', title: '用户组', icon: 'users' },
   //     { path: '/org/department', title: '部门管理', icon: 'connectdevelop' }
   //   ]

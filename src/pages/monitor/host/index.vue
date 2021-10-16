@@ -31,7 +31,7 @@
             :value="item.value">
           </el-option>
         </el-select>
-        <el-select v-model="queryParam.isActive" clearable placeholder="有效" class="select" v-if="false">
+        <el-select v-model="queryParam.isActive" clearable placeholder="Valid" class="select" v-if="false">
           <el-option
             v-for="item in activeOptions"
             :key="item.value"
@@ -130,7 +130,7 @@
           <template slot-scope="scope">
             <el-button :type="scope.row.monitorStatus === 0 ? 'warning' : 'success'" plain size="mini" @click="handlerSetMonitorHostStatus(scope.row)"
                        style="margin-left: 5px" :loading="scope.row.isSetting"
-                       v-if="scope.row.monitorStatus !== -1">{{ scope.row.monitorStatus === 0 ? '禁用' : '启用' }}
+                       v-if="scope.row.monitorStatus !== -1">{{ scope.row.monitorStatus === 0 ? 'Disable' : 'Enable' }}
             </el-button>
 
             <el-button type="success" plain size="mini" @click="handlerCreateMonitorHost(scope.row)"
@@ -179,10 +179,10 @@
 
   const monitorStatusOptions = [{
     value: 0,
-    label: '启用'
+    label: 'Enable'
   }, {
     value: 1,
-    label: '禁用'
+    label: 'Disable'
   }, {
     value: -1,
     label: '未监控'
@@ -190,18 +190,18 @@
 
   const activeOptions = [{
     value: true,
-    label: '有效'
+    label: 'Valid'
   }, {
     value: false,
-    label: '无效'
+    label: 'Invalid'
   }]
 
   const serverStatusOptions = [{
     value: 0,
-    label: '离线'
+    label: 'Offline'
   }, {
     value: 1,
-    label: '在线'
+    label: 'Online'
   }, {
     value: -1,
     label: '未知'

@@ -10,7 +10,7 @@ export default {
      * @description 登录
      * @param {Object} context
      * @param {Object} payload username {String} 用户账号
-     * @param {Object} payload password {String} 密码
+     * @param {Object} payload password {String} Password
      * @param {Object} payload route {Object} 登录成功后定向的路由对象 任何 vue-router 支持的格式
      */
     login ({ dispatch }, {
@@ -43,7 +43,7 @@ export default {
             } else {
               this.$message.error(res.msg)
             }
-            // 结束
+            // Finalized
             resolve()
           })
           .catch(err => {

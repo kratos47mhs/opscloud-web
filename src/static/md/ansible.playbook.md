@@ -1,6 +1,6 @@
-##### 文档
+##### Documentation
 
- + 官方站点 
+ + Official site
    + https://docs.ansible.com/
  + playbook 
    + https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
@@ -35,20 +35,20 @@
         state: restarted
 ```
 
-###### vars example(变量配置)
+###### vars example(Variable configuration)
 ```yaml
 vars:
   key1: value1
   key2: value2
 ```
 
-###### tags example(Tag configuration，可选择执行)
+###### tags example(Tag configuration，Optional execution)
 ```yaml
 tasks:
-  - name: 任务1
+  - name: Task 1
     tags: task1
     choose: true
-  - name: 任务2
+  - name: Task 2
     tags: task2
     choose: false
 ```

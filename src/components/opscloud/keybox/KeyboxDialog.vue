@@ -46,7 +46,7 @@
       </el-form-item>
     </el-form>
     <el-form :model="keyboxData">
-      <el-form-item label="密码" :label-width="labelWidth">
+      <el-form-item label="Password" :label-width="labelWidth">
         <el-input v-model="keyboxData.passphrase"></el-input>
       </el-form-item>
     </el-form>
@@ -71,7 +71,7 @@
           label: 'SSH密钥对'
         }, {
           value: 1,
-          label: '密码'
+          label: 'Password'
         }],
         defaultKeyOptions: [{
           value: 0,

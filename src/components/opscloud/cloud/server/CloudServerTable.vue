@@ -110,7 +110,7 @@ import { mapActions, mapState } from 'vuex'
 
 const statusOptions = [{
   value: 0,
-  label: '新建(未录入)'
+  label: 'New(未录入)'
 }, {
   value: 1,
   label: '已录入'

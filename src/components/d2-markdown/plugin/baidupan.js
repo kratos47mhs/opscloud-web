@@ -1,7 +1,7 @@
 export default (quote, assetsPublicPath) => {
   const _quote = quote.replace(/<[^<>]+>/g, '').trim()
   const bdPanUrl = /^https:\/\/pan\.baidu\.com\/s\/[a-z0-9]+$/i
-  const bdPanUrlPwd = /^链接: https:\/\/pan\.baidu\.com\/s\/[a-z0-9]+ 密码: [a-z0-9]{4}$/i
+  const bdPanUrlPwd = /^链接: https:\/\/pan\.baidu\.com\/s\/[a-z0-9]+ Password: [a-z0-9]{4}$/i
   if (bdPanUrl.test(_quote)) {
     return `<div class="baidupan">
       <a href="${_quote}" class="container">
@@ -24,7 +24,7 @@ export default (quote, assetsPublicPath) => {
         </a>
         <div class="line"></div>
         <div class="pwd">
-          密码
+          Password
           <span>${pwd[0]}</span>
         </div>
       </div>

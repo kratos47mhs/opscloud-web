@@ -50,7 +50,7 @@
                   <template slot-scope="scope">
                     <el-tag
                       :type="scope.row.status === 0 ? 'success' : 'primary'"
-                      disable-transitions>{{scope.row.status === 0 ? '启用' : '停用'}}</el-tag>
+                      disable-transitions>{{scope.row.status === 0 ? 'Enable' : '停用'}}</el-tag>
                   </template>
                 </el-table-column>
                 <el-table-column prop="fromTime" label="活动开始时间" width="160"></el-table-column>
@@ -71,7 +71,7 @@
                 <el-table-column prop="gmtCreate" label="创建时间" width="160"></el-table-column>
                 <el-table-column fixed="right" label="操作" width="220">
                   <template slot-scope="scope">
-                    <el-button type="primary" plain size="small" @click="updateItemStatus(scope.row)">{{scope.row.status === 0 ? '停用' : '启用'}}</el-button>
+                    <el-button type="primary" plain size="small" @click="updateItemStatus(scope.row)">{{scope.row.status === 0 ? '停用' : 'Enable'}}</el-button>
                     <el-button type="warning" plain size="small" @click="updateItem(scope.row)">编辑</el-button>
                     <el-button type="danger" plain size="small" @click="delItem(scope.row)">删除</el-button>
                   </template>

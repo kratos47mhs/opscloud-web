@@ -9,7 +9,7 @@
           <el-input v-model.trim="queryParam.name" placeholder="输入关键字查询用户组"
                     style="display: inline-block; max-width:200px; margin-left: 10px"/>
           <el-button @click="fetchData" style="margin-left: 5px">查询</el-button>
-          <el-button @click="addItem" style="margin-left: 5px">新建</el-button>
+          <el-button @click="addItem" style="margin-left: 5px">New</el-button>
           <el-button @click="handlerSyncUserGroup" style="margin-left: 5px">同步</el-button>
         </el-row>
       </div>

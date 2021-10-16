@@ -46,7 +46,7 @@
                   <el-input
                     type="password"
                     v-model="formLogin.password"
-                    placeholder="密码">
+                    placeholder="Password">
                     <i slot="prepend" class="fa fa-keyboard-o"></i>
                   </el-input>
                 </el-form-item>

@@ -50,7 +50,7 @@
           case 5:
             return 'ESXI'
           default:
-            return '未定义'
+            return 'Undefined'
         }
       }
     }

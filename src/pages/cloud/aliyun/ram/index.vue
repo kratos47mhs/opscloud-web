@@ -2,7 +2,7 @@
   <d2-container>
     <h1>{{ title }}</h1>
     <el-tabs v-model="activeName">
-      <el-tab-pane label="用户" name="ramUser">
+      <el-tab-pane label="User" name="ramUser">
         <AliyunRAMUserTable ref="aliyunRAMUserTable"></AliyunRAMUserTable>
       </el-tab-pane>
       <el-tab-pane label="策略" name="ramPolicy">
